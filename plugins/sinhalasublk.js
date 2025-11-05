@@ -190,7 +190,7 @@ try {
     if (sadas.downloadLinks && sadas.downloadLinks.length > 0) {
         sadas.downloadLinks.forEach(v => {
             rows.push({
-                buttonId: prefix + `sindl ${v.link}±${sadas.images?.[1] || ''}±${sadas.title}`,
+                buttonId: prefix + `sindl ${v.link}±${sadas.images?.[0] || ''}±${sadas.title}`,
                 buttonText: { displayText: `${v.size || 'N/A'} - ${v.quality || 'Unknown Quality'}` },
                 type: 1
             });
@@ -200,7 +200,7 @@ try {
     // 🧾 Prepare list menu
     const listRows = (sadas.downloadLinks || []).map(v => ({
         title: `${v.size} - ${v.quality}`,
-        id: prefix + `sindl ${v.link}±${sadas.images?.[1] || ''}±${sadas.title}`
+        id: prefix + `sindl ${v.link}±${sadas.images?.[0] || ''}±${sadas.title}`
     }));
 
     const listButtons = {
