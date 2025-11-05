@@ -2153,9 +2153,9 @@ let msg = `🅳🅸🅽🅺🅰 🆃🆅 🆂🅴🆁🅸🅴🆂\n\n*🍂 𝗧�
 *💁‍♂️ 𝗦ᴜʙᴛɪᴛʟᴇ ʙʏ ➮* _${sadas.data.subtitle_author || 'N/A'}_
 *🎭 𝗚ᴇɴᴀʀᴇꜱ ➮* ${sadas.data.genres.join(', ') || 'N/A'}
 
-> 🌟 Follow us : *${details.chlink}*\n${config.FOOTER}`
+> 🌟 Follow us : *${details.chlink}*\n\n${config.FOOTER}`
 
-await conn.sendMessage(config.DINKA || from, { image: { url: sadas.data.image.replace("-200x300", "") }, caption: msg })
+await conn.sendMessage(config.JID2 || from, { image: { url: sadas.data.image.replace("-200x300", "") }, caption: msg })
 
 
 
@@ -2240,7 +2240,7 @@ console.log ('Final_Dl:', mediaUrl)
             const up_mg = await conn.sendMessage(from, { text: '*Uploading your movie..⬆️*' });
 
             // 🔹 Send document
-            await conn.sendMessage(config.DINKA || from, { 
+            await conn.sendMessage(config.JID2 || from, { 
                 document: { url: mediaUrl },
                 caption: `🎞${dat}\n\n𝗗ɪɴᴋᴀ 𝗧ᴠ 𝗦ᴇʀɪᴇꜱ\n> *•ɴᴀᴅᴇᴇɴ-ᴍᴅ•*`,
                 mimetype: "video/mp4",
