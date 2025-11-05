@@ -2175,8 +2175,8 @@ let isUploadingggx = false; // Track upload status
 
 
 
-const cinesubzDownBase2 = "https://drive2.cscloud12.online";
-const apilinkcine2 = "https://cinesubz-store.vercel.app/";
+const cinesubzDownBase22 = "https://drive2.cscloud12.online";
+const apilinkcine22 = "https://cinesubz-store.vercel.app/";
 
 cmd({
     pattern: "pakatv2",
